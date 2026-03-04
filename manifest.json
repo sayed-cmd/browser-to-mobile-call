@@ -3,7 +3,7 @@
   "version": "1.1",
   "manifest_version": 3,
   "description": "Send selected phone number to Firebase and view your UID QR code.",
-  "permissions": ["contextMenus", "storage", "scripting"],
+  "permissions": ["contextMenus", "storage", "scripting", "alarms"],
   "background": {
     "service_worker": "background.js"
   },
