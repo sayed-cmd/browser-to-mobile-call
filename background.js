@@ -31,7 +31,7 @@ async function signInAnonymously() {
       return auth.currentUser.uid;
     }
   } catch (error) {
-    console.error("Anonymous sign-in failed:", error);
+    console.error("Sign-in failed:", error);
     return null;
   }
 }
@@ -53,7 +53,7 @@ chrome.alarms.onAlarm.addListener((alarm) => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "callFromMobile",
-    title: "Call from browser",
+    title: "Send to Mobile",
     contexts: ["selection"]
   });
   // install এর সময়ই একবার sign in করে রাখো
